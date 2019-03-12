@@ -12,8 +12,6 @@
 
 
         <link rel="stylesheet" href="./assets/scripts/styles/default.css">
-        <script src="./assets/scripts/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
 
 
         <title>Homestuck SBURB Engine Tutorial</title>
@@ -68,7 +66,7 @@
                             
                             <p>
                                 (Windows)<br>
-                                Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a> and make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
+                                Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a>, make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
                                 Run Cygwin (if you're on Windows) and navigate to the SBURB files using the "cd" command.
                                 For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
                             </p>
@@ -92,12 +90,10 @@
                                 Now that you've made your production version, you probably want to use it in an adventure on <a href="https://mspfa.com" target="_blank">MSFPA</a> or on some other website. To do this, first upload all the files and folders within the sburb.zip file, but not the zip file itself. You want a host that allows for any file format, correct folder structures and direct links to files. For this, I would suggest Miroware's <a href="https://miroware.io/pipe/" target="_blank">Pipe</a> as it fullfills all these criteria and is developed by the current owner of MSPFA.
                             </p>
                             <p>
-                                
+                                To embed your walkaround on <italic>any</italic> website, simply replace copy the following copy and replace the example link with the direct link to your own HTML file. You can then use the edited code on any website that allows HTML insertion and iframe not-same-origin access (including MSPFA). If this code does not work, it is either because the website does not support HTML/iframes or that your file link is not a direct link the HTML file.
                             </p>
                             <pre>
-                                <code>
-                                    &lt;iframe style="border: 0;" src="https://pipe.miroware.io/3xAmpl3/example.html"&gt;&lt;/iframe&gt;
-                                </code>
+                                <code>&lt;iframe style="border: 0;" src="https://pipe.miroware.io/3xAmpl3/example.html"&gt;&lt;/iframe&gt;</code>
                             </pre>
                         </section>
                     </section>
@@ -108,5 +104,8 @@
 
         <script src="./assets/scripts/jquery-3.3.1.min.js"></script>
         <script src="./assets/scripts/script.js"></script>
+
+        <script src="./assets/scripts/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

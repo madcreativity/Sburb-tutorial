@@ -68,7 +68,12 @@ a:hover {
 }
 
 code {
-    border-left: 6px solid #048C04;
+    border-radius: 6px;
+    border: 1px solid #DCDCDC;
+}
+
+code span.hljs-name {
+    color: #0035ff;
 }
 
 
