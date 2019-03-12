@@ -53,6 +53,9 @@ a:hover {
     width: 290px;
     flex-shrink: 0;
     flex-grow: 0;
+    position: sticky;
+    height: 500px;
+    top: 35px;
 }
 
 #innerContainer {
