@@ -23,8 +23,25 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
         if(!$target.is(":focus")) {
           $target.attr('tabindex','-1');
           $target.focus();
-        };
+        } else {
+          document.documentElement.scrollTop = target.offset().top - 60;
+          return false;
+        }
       });
     }
+  }
+});
+
+/// Code highlights
+addEventListener('load', () => {
+  const code = document.querySelector('#code');
+
+  try {
+    const worker = new Worker('worker.js');
+    worker.onmessage = (event) => { code.innerHTML = event.data; }
+    worker.postMessage(code.textContent);
+  }
+  catch(exception) {
+    console.log("Failed while setting up code highlighter");
   }
 });

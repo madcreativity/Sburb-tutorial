@@ -7,7 +7,14 @@
 
         <link rel="icon" href="./assets/images/logo.png">
 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="./assets/stylesheets/style.css">
+
+
+        <link rel="stylesheet" href="./assets/scripts/styles/default.css">
+        <script src="./assets/scripts/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
 
         <title>Homestuck SBURB Engine Tutorial</title>
     </head>
@@ -25,46 +32,78 @@
             <div id="container">
                 <section id="contents">
                     <h2>Contents</h2>
-                    <ol>
-                        <li><a href="#production">Production</a></li>
-                    </ol>
+                    <ul>
+                        <li>
+                            Pre-development
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Development
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#post-development">Post-development</a>
+                            <ul>
+                                <li><a href="#production">Creating production version</a></li>
+                                <li><a href="#external-embedding">Embedding on external sites</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
                 <div id="innerContainer">
-                    <section id="production">
-                        <h2>Creating production version</h2>
-                        <p>
-                            Creating a production version of your walkaround is important if you want to publish it. It basically compresses all the code and makes it faster to load.
-                            The jsmin file in the current version of the SBURB engine is not functional so download it from <a href="http://crockford.com/javascript/jsmin" target="_blank">http://crockford.com/javascript/jsmin</a> move the exe file from the zip and to the folder where the other jsmin file is and then delete the jsmin file that's not an executable.
-                        </p>
-                        
-                        <p>
-                            (Windows)<br>
-                            Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a> and make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
-                            Run Cygwin (if you're on Windows) and navigate to the SBURB files using the "cd" command.
-                            For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
-                        </p>
-                        <ul>
-                            <li>"cd C:"</li>
-                            <li>"cd Users"</li>
-                            <li>"cd Mad"</li>
-                            <li>"cd sburb"</li>
-                        </ul>
-                        <p>
-                            Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
-                            This should create a zip file called "Sburb.zip". Congratulatious, you now have a production version that you can upload to the internet.
-                        </p>
+                    <section id="post-development">
+                        <h1>Post-development</h1>
+                        <section id="production">
+                            <h2>Creating production version</h2>
+                            <p>
+                                Creating a production version of your walkaround is important if you want to publish it. It basically compresses all the code and makes it faster to load.
+                                The jsmin file in the current version of the SBURB engine is not functional so download it from <a href="http://crockford.com/javascript/jsmin" target="_blank">http://crockford.com/javascript/jsmin</a>. Move the exe file from the zip and to the folder where the other jsmin file is and then delete the old jsmin file.
+                            </p>
+                            
+                            <p>
+                                (Windows)<br>
+                                Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a> and make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
+                                Run Cygwin (if you're on Windows) and navigate to the SBURB files using the "cd" command.
+                                For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
+                            </p>
+                            <ul>
+                                <li>"cd C:"</li>
+                                <li>"cd Users"</li>
+                                <li>"cd Mad"</li>
+                                <li>"cd sburb"</li>
+                            </ul>
+                            <p>
+                                Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
+                                This should create a zip file called "sburb.zip". Congratulations; You now have a production version that can be uploaded to the internet.
+                            </p>
+                            <p class="subnote">
+                                Thanks to <a href="https://www.reddit.com/user/Ruzert" target="_blank">Ruzert</a> for finding the jsmin file fix.
+                            </p>
+                        </section>
+                        <section id="external-embedding">
+                            <h2>Embedding on external sites</h2>
+                            <p>
+                                Now that you've made your production version, you probably want to use it in an adventure on <a href="https://mspfa.com" target="_blank">MSFPA</a> or on some other website. To do this, first upload all the files and folders within the sburb.zip file, but not the zip file itself. You want a host that allows for any file format, correct folder structures and direct links to files. For this, I would suggest Miroware's <a href="https://miroware.io/pipe/" target="_blank">Pipe</a> as it fullfills all these criteria and is developed by the current owner of MSPFA.
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <pre>
+                                <code>
+                                    &lt;iframe style="border: 0;" src="https://pipe.miroware.io/3xAmpl3/example.html"&gt;&lt;/iframe&gt;
+                                </code>
+                            </pre>
+                        </section>
                     </section>
                 </div>
             </div>
         </main>
-
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#production">Production</a></li>
-                </ul>
-            </nav>
-        </footer>
 
 
         <script src="./assets/scripts/jquery-3.3.1.min.js"></script>
