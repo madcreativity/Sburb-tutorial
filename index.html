@@ -20,7 +20,6 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://github.com/WhatPumpkin/Sburb" target="_blank">Download</a></li>
                     <li><a href="appendices.html">Appendices</a></li>
                 </ul>
             </nav>
@@ -32,14 +31,14 @@
                     <h2>Contents</h2>
                     <ul>
                         <li>
-                            Pre-development
+                            <a href="#pre-development">Pre-development</a>
                             <ul>
-                                <li></li>
+                                <li><a href="#setup">Setting up</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            Development
+                            <a href="#development">Development</a>
                             <ul>
                                 <li></li>
                             </ul>
@@ -55,18 +54,41 @@
                     </ul>
                 </section>
                 <div id="innerContainer">
+                    <section id="pre-development">
+                        <h1>Pre-development</h1>
+                        <section id="setup">
+                            <h2>Setting up</h2>
+                            <p>
+                                Setting up is really simple since you only need a text editor, a browser and the files from the Github page, but I'll write it down anyway since some people may have difficulties. First off, open the <a href="https://github.com/WhatPumpkin/Sburb" target="_blank">Github page</a>. There should be a green button labeled "Clone or download". Push that button and then click the "Download ZIP" button.
+                            </p>
+                            <p>
+                                When the file is done downloading, find the ZIP and extract its contents in a folder on your computer. I would also suggest downloading either <a href="https://notepad-plus-plus.org/download/v7.6.4.html" target="_blank">Notepad++</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> to make the files easier to work with and read, though.
+                            </p>
+                        </section>
+                    </section>
+
+                    <section id="development">
+                        <h1>Development</h1>
+                        <section>
+                            <h2></h2>
+                            <p>
+
+                            </p>
+                        </section>
+                    </section>
+
                     <section id="post-development">
                         <h1>Post-development</h1>
                         <section id="production">
                             <h2>Creating production version</h2>
                             <p>
                                 Creating a production version of your walkaround is important if you want to publish it. It basically compresses all the code and makes it faster to load.
-                                The jsmin file in the current version of the SBURB engine is not functional so download it from <a href="http://crockford.com/javascript/jsmin" target="_blank">http://crockford.com/javascript/jsmin</a>. Move the exe file from the zip and to the folder where the other jsmin file is and then delete the old jsmin file.
+                                The jsmin file in the current version of the SBURB engine is not functional so download it from <a href="http://crockford.com/javascript/jsmin" target="_blank">http://crockford.com/javascript/jsmin</a>. Move the exe file from the ZIP and to the folder where the other jsmin file is and then delete the old jsmin file.
                             </p>
                             
                             <p>
                                 (Windows)<br>
-                                Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a>, make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
+                                Intall Cygwin from <a href="https://cygwin.com/install.html" target="_blank">https://cygwin.com/install.html</a>, make sure that the "zip" and "bzip2" packages are both set to the newest versions and that the bin's are included.
                                 Run Cygwin (if you're on Windows) and navigate to the SBURB files using the "cd" command.
                                 For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
                             </p>
@@ -78,7 +100,7 @@
                             </ul>
                             <p>
                                 Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
-                                This should create a zip file called "sburb.zip". Congratulations; You now have a production version that can be uploaded to the internet.
+                                This should create a ZIP file called "sburb.zip". Congratulations; You now have a production version that can be uploaded to the internet.
                             </p>
                             <p class="subnote">
                                 Thanks to <a href="https://www.reddit.com/user/Ruzert" target="_blank">Ruzert</a> for finding the jsmin file fix.
