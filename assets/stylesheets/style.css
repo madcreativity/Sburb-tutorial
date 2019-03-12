@@ -1,0 +1,133 @@
+html, body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+}
+
+* {
+    outline: none !important;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+main {
+    padding: 20px 20px 40px 20px;
+    min-height: calc(100vh - 200px);
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.code {
+    background-color: #EEEEEE;
+    color: #535353;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 6px solid #048C04;
+}
+
+#contents {
+    width: 25%;
+}
+
+#innerContainer {
+    padding-left: 25px;
+}
+
+a {
+    color: #0000F4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    transition: border-bottom ease 0.25s, box-shadow ease 0.25s;
+}
+
+header nav {
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header#moving {
+    border-bottom: 1px solid #BBBBBB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #535353;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #535353;
+    box-sizing: border-box;
+    height: 150px;
+    color: #DDDDDD;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer li a {
+    color: #DDDDDD;
+}
+
+
+@media screen and (max-width: 768px) {
+    #contents {
+        display: none;
+    }
+}

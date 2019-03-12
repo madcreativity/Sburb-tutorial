@@ -1,0 +1,19 @@
+Download the SBURB engine from https://github.com/WhatPumpkin/Sburb and unzip the zip file anywhere on your computer.
+
+
+Creating production version:
+The jsmin file in the current version of the SBURB engine is not functional so download it from http://crockford.com/javascript/jsmin, move the exe file from the zip and to the folder where the other jsmin file is and then delete the jsmin file that's not an executable.
+
+(Windows)
+Intall Cygwin from https://cygwin.com/install.html and make sure that the zip and bzip2 packages are both set to the newest versions and that the bin's are included.
+
+Run Cygwin (if you're on Windows) and navigate to the SBURB files using the "cd" command.
+For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
+"cd C:"
+"cd Users"
+"cd Mad"
+"cd sburb"
+
+Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
+This should create a zip file called "Sburb.zip". Congratulatious, you now have a production version that you can upload to the internet.
+
