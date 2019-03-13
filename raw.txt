@@ -1,7 +1,17 @@
+Init.xml
+The first file you'll see when opening the "levels" folder is the "init.xml" file. This file is automatically set to run on startup (unless you change it in index.html) and basically surves as the entry point to your game. It's where you choose what room should be loaded first, which asset path you're using (where your images are relative to the top folder) and what dependencies all your rooms need. Your file is probably already set up to load the things it needs to, though. We'll get more into this later.
+
+
+Creating your first room
+
+
+
+
+
 Download the SBURB engine from https://github.com/WhatPumpkin/Sburb and unzip the zip file anywhere on your computer.
 
 
-Creating production version:
+Creating production version
 The jsmin file in the current version of the SBURB engine is not functional so download it from http://crockford.com/javascript/jsmin, move the exe file from the zip and to the folder where the other jsmin file is and then delete the jsmin file that's not an executable.
 
 (Windows)
@@ -16,4 +26,3 @@ For example, if my folder was C:/Users/Mad/sburb, I'd do the following:
 
 Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
 This should create a zip file called "Sburb.zip". Congratulatious, you now have a production version that you can upload to the internet.
-
