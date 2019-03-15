@@ -56,6 +56,7 @@ a:hover {
     position: sticky;
     height: 500px;
     top: 35px;
+    margin-top: 10px;
 }
 
 #innerContainer {
@@ -115,16 +116,10 @@ header {
     z-index: 50;
     padding: 10px 40px;
     box-sizing: border-box;
-    background-color: white;
-    font-weight: 400;
-    transition: border-bottom ease 0.25s, background-color ease 0.25s, box-shadow ease 0.25s;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-header#moving {
     background-color: #303030;
-    border-color: #808080;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    font-weight: 400;
+    border-bottom: 1px solid #808080;
 }
 
 
@@ -157,14 +152,10 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #808080;
-    text-decoration: underline;
-}
-
-header#moving ul li a:hover {
     color: #A0A0A0;
     text-decoration: none;
 }
+
 
 
 /* Media queries */
