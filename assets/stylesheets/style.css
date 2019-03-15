@@ -95,24 +95,15 @@ code span.hljs-name {
     position: fixed;
     bottom: 8px;
     right: 8px;
-    width: 50px;
-    height: 50px;
     color: #333333;
     font-size: 24px;
     font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16);
     background-color: white;
-    border: 1px solid #BBBBBB;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow ease 0.25s;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#move-up:hover {
-    text-decoration: none;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.50);
+    z-index: 50;
 }
 
 
