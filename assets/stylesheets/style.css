@@ -68,6 +68,13 @@ a:hover {
     box-sizing: border-box;
 }
 
+.notes {
+    border-radius: 8px;
+    padding: 5px 15px;
+    background-color: #EEEEEE;
+    border: 1px solid #AAAAAA;
+}
+
 .subnote {
     font-size: 0.9em;
     color: #AAAAAA;

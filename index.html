@@ -41,6 +41,7 @@
                         <li>
                             <a href="#development">Development</a>
                             <ul>
+                                <li><a href="#init-xml">Init.xml</a></li>
                                 <li><a href="#first-room">Creating your first room</a></li>
                             </ul>
                         </li>
@@ -66,14 +67,26 @@
                                 When the file is done downloading, find the ZIP and extract its contents in a folder on your computer. I would also suggest downloading either <a href="https://notepad-plus-plus.org/download/v7.6.4.html" target="_blank">Notepad++</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> to make the files easier to work with and read, though.
                             </p>
                         </section>
+                        <section class="notes">
+                            <h2>Notes</h2>
+                            <p>
+                                While developing your walkaround, please remember that all names are case sensitive. For example, "SamPle-folDer" is not the same as "sample-folder".
+                            </p>
+                        </section>
                     </section>
 
                     <section id="development">
                         <h1>Development</h1>
+                        <section id="init-xml">
+                            <h2>Init.xml</h2>
+                            <p>
+                                The first file you'll see when opening the "levels" folder is the "init.xml" file. This file is automatically set to run on startup (unless you change it in index.html) and basically surves as the entry point to your walkaround. It's where you choose what room should be loaded first, which asset path you're using (where your images are relative to the main folder) and what dependencies all your rooms need. Your file is probably already set up to load the things it needs to, though. No need to worry about this right now so just don't mess with it.
+                            </p>
+                        </section>
                         <section id="first-room">
                             <h2>Creating your first room</h2>
                             <p>
-
+                                
                             </p>
                         </section>
                     </section>
@@ -100,7 +113,7 @@
                                 <li>"cd sburb"</li>
                             </ul>
                             <p>
-                                Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. Typing "y" and pressing enter is all you really need to do.
+                                Once you're there, type "batch production.sh". It might ask you if you want to delete index.html or index_dev.html. You're free to type either "y" or "n" ("yes" or "no", respectively).
                                 This should create a ZIP file called "sburb.zip". Congratulations; You now have a production version that can be uploaded to the internet.
                             </p>
                             <p class="subnote">
