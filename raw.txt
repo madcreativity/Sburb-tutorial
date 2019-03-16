@@ -1,9 +1,10 @@
 Init.xml
-The first file you'll see when opening the "levels" folder is the "init.xml" file. This file is automatically set to run on startup (unless you change it in index.html) and basically surves as the entry point to your game. It's where you choose what room should be loaded first, which asset path you're using (where your images are relative to the top folder) and what dependencies all your rooms need. Your file is probably already set up to load the things it needs to, though. We'll get more into this later.
+The first file you'll see when opening the "levels" folder is the "init.xml" file. This file is automatically set to run on startup (unless you change it in index.html) and basically surves as the entry point to your walkaround. It's where you choose what room should be loaded first, which asset path you're using (where your images are relative to the main folder) and what dependencies all your rooms need. Your file is probably already set up to load the things it needs to, though. No need to worry about this right now so just don't mess with it.
 
 
-Creating your first room
 
+The structure of a SBURBML file
+Before you really get into working with SBURBML, you need to know the basic structure of a SBURBML file.
 
 
 
